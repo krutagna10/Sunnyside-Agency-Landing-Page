@@ -6,7 +6,7 @@
 
 ### Links
 
-- Live Site URL: https://sunnyside-agency-landing-page-10.vercel.app/]
+- Live Site URL: [https://sunnyside-agency-landing-page-10.vercel.app/]
 
 ### Built with
 
