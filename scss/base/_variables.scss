@@ -1,0 +1,15 @@
+:root {
+  --font-barlow: 'Barlow', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
+  --font-size-500: 2.5rem;
+  --font-size-400: 2rem;
+  --font-size-300: 1.25rem;
+
+}
+
+@media (min-width: 48rem) {
+  --font-size-500: 3.5rem;
+  --font-size-400: 2.5rem;
+  --font-size-300: 1.125rem;
+
+}
