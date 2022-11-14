@@ -44,7 +44,7 @@
 /* Below 750 pixels*/
 @media (max-width: 45em) {
     /* Mobile navigation */
-    .main-nav {
+    .header__nav {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -61,45 +61,42 @@
         visibility: hidden;
     }
 
-    .nav-open .main-nav {
+    .nav-open .header__nav {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
     }
 
-    .nav-open .open-btn {
-        display: none;
-    }
-
-    .nav-open .close-btn {
+    .header__mobile-nav-toggle {
         display: block;
+        width: 3rem;
+        height: 2rem;
+        border: none;
+        background-image: url('../images/icon-hamburger.svg');
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 999;
     }
 
-    .main-nav-list {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+    .nav-open .header__mobile-nav-toggle {
+        background-image: url('../images/icon-close.svg');
     }
 
-    .mobile-navigation {
-        display: block;
-    }
-
-    .main-nav-link {
+    .header__nav-link {
         color: var(--very-dark-desaturated-blue);
     }
 
-    .main-nav-link:hover {
+    .header__nav-link:hover {
         color: var(--yellow);
     }
 
-    .contact-link {
+    .header__contact-link {
         background-color: var(--yellow);
         color: white;
     }
 
-    .contact-link:hover {
+    .header__contact-link:hover {
         background: transparent;
         color: var(--yellow);
         border-color: var(--yellow);
@@ -197,7 +194,7 @@
        padding-inline: 1rem;
    }
 
-    .main-nav {
+    .header__nav {
         width: 80%;
     }
 
@@ -240,7 +237,7 @@
         min-height: 15rem;
     }
 
-    .main-nav {
+    .header__nav {
         width: 90%;
     }
 }

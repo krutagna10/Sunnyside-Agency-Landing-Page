@@ -12,18 +12,15 @@
     --font-weight-600: 600;
     --font-weight-700: 700;
     --font-weight-900: 900;
-    --font-size-14: 0.875rem;
     --font-size-16: 1rem;
     --font-size-18: 1.125rem;
     --font-size-20: 1.25rem;
     --font-size-24: 1.5rem;
     --font-size-28: 1.75rem;
     --font-size-32: 2rem;
-    --font-size-36: 2.25rem;
     --font-size-40: 2.5rem;
     --font-size-48: 3rem;
     --font-size-64: 4rem;
-    --font-size-80: 5rem;
 
     /* Colors */
     --soft-red: hsl(7, 99%, 70%);
@@ -39,7 +36,9 @@
     --white: hsl(0, 0%, 100%);
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -48,6 +47,10 @@
 img {
     display: block;
     max-width: 100%;
+}
+
+button {
+    font: inherit;
 }
 
 html {
@@ -65,7 +68,7 @@ body {
 /* Header Styling*/
 /**************************/
 
-header {
+.header-section {
     background-image: url('../images/Desktop/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,21 +78,21 @@ header {
     position: relative;
 }
 
-.main-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
 }
 
-.main-nav-list {
+.header__nav-list {
     display: flex;
     gap: 2.75rem;
     list-style: none;
     align-items: center;
 }
 
-.main-nav-link {
+.header__nav-link {
     text-decoration: none;
     font-family: var(--barlow);
     font-size: var(--font-size-18);
@@ -101,7 +104,7 @@ header {
     cursor: pointer;
 }
 
-.main-nav-link::before {
+.header__nav-link::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -111,7 +114,7 @@ header {
 
 }
 
-.main-nav-link:hover::before {
+.header__nav-link:hover::before {
     animation: border_animation 0.5s linear forwards;
 }
 
@@ -124,7 +127,7 @@ header {
     }
 }
 
-.contact-link {
+.header__contact-link {
     display: block;
     text-decoration: none;
     background-color: var(--white);
@@ -135,29 +138,13 @@ header {
     transition: all 0.3s ease;
 }
 
-.contact-link:hover {
+.header__contact-link:hover {
     background-color: transparent;
     color: var(--white);
     border-color: var(--white);
 }
 
-.open-btn,
-.close-btn {
-    border: none;
-    display: inline-block;
-    background: transparent;
-    color: var(--white);
-    font-size: var(--font-size-32);
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.close-btn {
-    display: none;
-}
-
-.mobile-navigation {
+.header__mobile-nav-toggle {
     display: none;
 }
 
@@ -182,10 +169,6 @@ header {
         transform: translateY(0%);
     }
 }
-
-
-
-
 
 .overlay.hidden {
     display: none;
@@ -243,6 +226,7 @@ header {
     border-radius: 2rem;
     border: 2px solid transparent;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .learn-more-btn.yellow-background {
