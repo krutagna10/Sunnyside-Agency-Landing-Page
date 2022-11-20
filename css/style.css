@@ -144,7 +144,7 @@ body {
     display: none;
 }
 
-.down-arrow-container {
+.header__arrow {
     position: absolute;
     top: 45%;
     left: 50%;
