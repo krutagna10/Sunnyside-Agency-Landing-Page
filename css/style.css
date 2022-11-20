@@ -24,7 +24,7 @@
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
-    --footer-background: #8ed0c4;
+    --light-cyan: #8ed0c4;
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -347,25 +347,25 @@ body {
 /************************/
 /* Footer */
 /************************/
-.footer {
+.footer-section {
     padding: 4rem 0;
-    background-color: var(--footer-background);
+    background-color: var(--light-cyan);
 }
 
 footer a {
     text-decoration: none;
 }
 
-.footer-logo {
+.footer__logo {
     filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(1123%) hue-rotate(116deg) brightness(100%) contrast(90%);
     transition: all 0.3s ease;
 }
 
-.footer-logo:hover {
+.footer__logo:hover {
     filter: none;
 }
 
-.footer-container {
+.footer {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -373,34 +373,34 @@ footer a {
     align-items: center;
 }
 
-.footer-nav-list {
+.footer__nav-list {
     list-style: none;
     display: flex;
     gap: 3rem;
 
 }
 
-.footer-nav-link {
+.footer__nav-link {
     color: var(--dark-desaturated-cyan);
     transition: all 0.3s ease;
 }
 
-.footer-nav-link:hover {
+.footer__nav-link:hover {
     color: var(--white);
 }
 
-.social-media-logos {
+.footer__social-logos {
     display: flex;
     gap: 1.75rem;
 }
 
-.social-media-logo {
+.footer__social-logo {
     color: var(--dark-desaturated-cyan);
     font-size: var(--font-size-24);
     transition: all 0.3s ease;
 }
 
-.social-media-logo:hover {
+.footer__social-logo:hover {
     color: var(--white);
 }
 
