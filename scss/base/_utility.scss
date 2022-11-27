@@ -2,22 +2,6 @@
   /*height: 42rem;*/
 }
 
-.grid {
-  display: grid;
-}
-
-.grid-2-columns {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3-columns {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-4-columns {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .primary-heading,
 .secondary-heading,
 .tertiary-heading{
@@ -26,8 +10,7 @@
 }
 
 .primary-heading {
-  font-size: var(--font-size-64);
-  margin-top: 6rem;
+  font-size: var(--font-size-600);
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   text-align: center;
@@ -35,11 +18,11 @@
 }
 
 .secondary-heading {
-  font-size: var(--font-size-48);
+  font-size: var(--font-size-500);
   color: var(--very-dark-desaturated-blue);
 }
 
 .tertiary-heading {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-400);
   color: var(--very-dark-desaturated-blue);
 }

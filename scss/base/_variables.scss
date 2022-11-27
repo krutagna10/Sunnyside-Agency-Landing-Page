@@ -24,14 +24,16 @@
   --font-size-200: 1rem;
   --font-size-100: 0.9375rem;
 
- // Font weight
+  // Font weight
   --font-weight-600: 600;
   --font-weight-700: 700;
   --font-weight-900: 900;
 }
 
 @media (min-width: 48rem) {
-  --font-size-600: 3.5rem;
-  --font-size-500: 2.5rem;
-  --font-size-400: 1.125rem;
+  :root {
+    --font-size-600: 3.5rem;
+    --font-size-500: 2.5rem;
+    --font-size-400: 1.125rem;
+  }
 }
