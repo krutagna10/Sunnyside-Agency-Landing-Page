@@ -1,5 +1,43 @@
+.header-section {
+  background-image: url('/images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 0;
+  height: 100vh;
+  position: relative;
+}
+
 .header {
-  &__logo-wrapper {
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  &__nav {
+    display: none;
+  }
+
+  &__mobile-nav-toggle {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    border: none;
+    background: transparent url('/images/icon-hamburger.svg') no-repeat center;
+  }
+
+  .nav-open &__mobile-nav-toggle {
+    background-image: url('/images/icon-close.svg');
+  }
+
+  &__heading {
+    margin-top: 3.5rem;
+  }
+
+  &__arrow-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    transform: translateX(-50%);
   }
 }
