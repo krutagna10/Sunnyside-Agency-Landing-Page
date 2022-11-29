@@ -28,6 +28,9 @@
   --font-weight-600: 600;
   --font-weight-700: 700;
   --font-weight-900: 900;
+
+//  Spacing
+  --gap: 1rem;
 }
 
 @media (min-width: 48rem) {
@@ -35,5 +38,7 @@
     --font-size-600: 3.5rem;
     --font-size-500: 2.5rem;
     --font-size-400: 1.125rem;
+
+    --gap: 1.25rem;
   }
 }

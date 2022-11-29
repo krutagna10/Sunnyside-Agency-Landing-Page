@@ -1,36 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-
-:root {
-
-    /* Typography */
-    --barlow: 'Barlow', sans-serif;
-    --fraunces: 'Fraunces', serif;
-    --font-weight-600: 600;
-    --font-weight-700: 700;
-    --font-weight-900: 900;
-    --font-size-16: 1rem;
-    --font-size-18: 1.125rem;
-    --font-size-20: 1.25rem;
-    --font-size-24: 1.5rem;
-    --font-size-28: 1.75rem;
-    --font-size-32: 2rem;
-    --font-size-40: 2.5rem;
-    --font-size-48: 3rem;
-    --font-size-64: 4rem;
-
-    /* Colors */
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
-    --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 41%);
-    --light-cyan: #8ed0c4;
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
-    --white: hsl(0, 0%, 100%);
-}
 
 *,
 *::before,
@@ -184,7 +151,7 @@ body {
     justify-content: center;
 }
 
-.text-content {
+.intro__text-content {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -192,7 +159,7 @@ body {
     justify-content: center;
 }
 
-.text {
+.intro__text {
     color: var(--dark-grayish-blue);
     line-height: 1.6;
 }
@@ -212,7 +179,7 @@ body {
     background-image: url('../images/desktop/image-stand-out.jpg');
 }
 
-.learn-more-btn {
+.intro__btn-learn {
     font-size: var(--font-size-18);
     display: block;
     align-self: flex-start;
@@ -225,21 +192,21 @@ body {
     cursor: pointer;
 }
 
-.learn-more-btn.yellow-background {
+.intro__btn-learn.yellow-background {
     background-color: var(--yellow);
 }
 
-.learn-more-btn.yellow-background:hover {
+.intro__btn-learn.yellow-background:hover {
     background-color: transparent;
     color: var(--yellow);
     border-color: var(--yellow);
 }
 
-.learn-more-btn.red-background {
+.intro__btn-learn.red-background {
     background-color: var(--soft-red);
 }
 
-.learn-more-btn.red-background:hover {
+.intro__btn-learn.red-background:hover {
     background-color: transparent;
     color: var(--soft-red);
     border-color: var(--soft-red);

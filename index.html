@@ -18,11 +18,11 @@
         </a>
 
         <nav class="header__nav">
-            <ul class="header__nav-list">
+            <ul class="header__nav-list flex flex--gap">
                 <li><a href="#" class="header__nav-link">About</a></li>
                 <li><a href="#" class="header__nav-link">Services</a></li>
                 <li><a href="#" class="header__nav-link">Projects</a></li>
-                <li><a href="#" class="header__contact-link">Contact</a></li>
+                <li><a href="#" class="header__nav-link header__nav-link--contact">Contact</a></li>
             </ul>
         </nav>
         <button class="header__mobile-nav-toggle"></button>
@@ -34,31 +34,35 @@
 
 <main>
     <section class="intro-section" id="intro-section">
-        <div class="container grid grid-2-columns">
-            <div class="text-content">
-                <h2 class="secondary-heading">Transform your brand</h2>
-                <p class="text">
+        <div class="intro container grid grid-2-columns">
+            <div class="intro__text-content">
+                <h2 class="intro__heading secondary-heading">Transform your brand</h2>
+                <p class="intro__text">
                     We are a full-service creative agency specializing in helping brands grow fast.
                     Engage your clients through compelling visuals that do most of the marketing for you.
                 </p>
-                <button class="learn-more-btn yellow-background">Learn More</button>
+                <button class="intro__btn-learn">Learn More</button>
             </div>
-            <div class="image-container egg-image"></div>
+            <div class="image-container egg-image">
+
+            </div>
         </div>
 
-        <div class="container grid grid-2-columns">
+        <div class="container grid grid--2-columns">
             <div class="image-container glass-image"></div>
-            <div class="text-content">
+            <div class="intro__text-content">
                 <h2 class="secondary-heading">Stand out to the right audience</h2>
-                <p class="text">
+                <p class="intro__text">
                     Using a collaborative formula of designers, researchers, photographers, videographers, and
                     copywriters,
                     we’ll build and extend your brand in digital places.
                 </p>
-                <button class="learn-more-btn red-background">Learn More</button>
+                <button class="intro__btn-learn">Learn More</button>
             </div>
         </div>
+    </section>
 
+    <section class="design-section">
         <div class="container grid grid-2-columns">
             <div class="graphic-design-content">
                 <h3 class="tertiary-heading">Graphic design</h3>
