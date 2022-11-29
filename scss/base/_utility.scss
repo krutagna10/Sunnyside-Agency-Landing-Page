@@ -1,11 +1,7 @@
-.container {
-  /*height: 42rem;*/
-}
-
 .primary-heading,
 .secondary-heading,
 .tertiary-heading{
-  font-family: var(--fraunces);
+  font-family: var(--font-fraunces) !important;
   font-weight: var(--font-weight-900);
 }
 

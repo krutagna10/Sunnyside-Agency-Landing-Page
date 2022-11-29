@@ -1,0 +1,30 @@
+.intro {
+  &__image {
+    min-height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__image--transform {
+    background-image: url("/images/mobile/image-transform.jpg");
+  }
+
+  &__image--stand-out {
+    background-image: url("/images/mobile/image-stand-out.jpg");
+  }
+
+  @media (min-width: 48em) {
+    &__image {
+      min-height: 40rem;
+    }
+
+    &__image--transform {
+      background-image: url("/images/desktop/image-transform.jpg");
+    }
+
+    &__image--stand-out {
+      background-image: url("/images/desktop/image-stand-out.jpg");
+    }
+  }
+}

@@ -18,11 +18,12 @@ button {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: var(--barlow);
+  font-family: var(--font-barlow);
+  min-height: 100vh;
   font-size: var(--font-size-18);
   color: var(--very-dark-desaturated-blue);
-  position: relative;
 }
