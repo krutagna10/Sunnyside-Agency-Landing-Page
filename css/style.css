@@ -1,36 +1,4 @@
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-button {
-    font: inherit;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--barlow);
-    font-size: var(--font-size-18);
-    color: var(--very-dark-desaturated-blue);
-    position: relative;
-}
-
-/**************************/
-/* Header Styling*/
-/**************************/
-
 .header-section {
     background-image: url('../images/desktop/image-header.jpg');
     background-repeat: no-repeat;
@@ -164,18 +132,18 @@ body {
     line-height: 1.6;
 }
 
-.image-container {
+.intro__image-wrapper {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 42rem;
 }
 
-.image-container.egg-image {
+.intro__image-wrapper.egg-image {
     background-image: url('../images/desktop/image-transform.jpg');
 }
 
-.image-container.glass-image {
+.intro__image-wrapper.glass-image {
     background-image: url('../images/desktop/image-stand-out.jpg');
 }
 
@@ -290,23 +258,23 @@ body {
 /************************/
 /* Gallery - Section */
 /************************/
-.image-gallery .image-container  {
+.image-gallery .intro__image-wrapper  {
    min-height: 32rem;
 }
 
-.image-gallery .image-container:nth-child(1) {
+.image-gallery .intro__image-wrapper:nth-child(1) {
     background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
 }
 
-.image-gallery .image-container:nth-child(2) {
+.image-gallery .intro__image-wrapper:nth-child(2) {
     background-image: url('../images/desktop/image-gallery-orange.jpg');
 }
 
-.image-gallery .image-container:nth-child(3) {
+.image-gallery .intro__image-wrapper:nth-child(3) {
     background-image: url('../images/desktop/image-gallery-cone.jpg');
 }
 
-.image-gallery .image-container:nth-child(4) {
+.image-gallery .intro__image-wrapper:nth-child(4) {
     background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
 }
 
