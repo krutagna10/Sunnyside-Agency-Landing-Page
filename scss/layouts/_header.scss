@@ -65,7 +65,19 @@
   }
 
   &__contact-link {
+    background-color: var(--yellow);
     color: var(--white);
+    display: block;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  &__contact-link:hover {
+    background-color: transparent;
+    color: var(--yellow);
+    border-color: var(--yellow);
   }
 
   &__mobile-nav-toggle {
@@ -139,7 +151,14 @@
     }
 
     &__contact-link {
-      display: block;
+      background-color: var(--white);
+      color: var(--light-blue);
+    }
+
+    &__contact-link:hover {
+      background-color: transparent;
+      color: var(--white);
+      border-color: var(--white);
     }
 
     &__mobile-nav-toggle {
