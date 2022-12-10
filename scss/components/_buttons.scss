@@ -10,15 +10,23 @@
   cursor: pointer;
 }
 
-.btn--blue {
-
+.btn--yellow {
+  background-color: var(--yellow);
 }
 
-.btn--yellow {
-
+.btn--yellow:hover {
+  background-color: transparent;
+  color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 .btn--red {
-  
+  background-color: var(--soft-red);
+}
+
+.btn--red:hover {
+  background-color: transparent;
+  color: var(--soft-red);
+  border-color: var(--soft-red);
 }
 
