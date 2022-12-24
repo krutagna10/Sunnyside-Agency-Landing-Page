@@ -178,8 +178,8 @@
     border-color: var(--soft-red);
 }
 
-.graphic-design-content,
-.photography-content {
+.design__graphic,
+.design__photography {
     display: flex;
     flex-direction: column;
     padding: 3rem 10rem;
@@ -197,11 +197,11 @@
     line-height: 1.6;
 }
 
-.graphic-design-content {
+.design__graphic {
     background-image: url('../images/desktop/image-graphic-design.jpg');
 }
 
-.photography-content {
+.design__photography {
     background-image: url('../images/desktop/image-photography.jpg');
 }
 

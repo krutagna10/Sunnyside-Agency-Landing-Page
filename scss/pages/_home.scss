@@ -1,9 +1,28 @@
 .intro {
+  &__text {
+    font-size: var(--font-size-300);
+  }
+
+  &__text-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3.5rem 0;
+    padding-inline: 1rem;
+  }
+
   &__image {
     min-height: 20rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &__image--transform {
+    grid-row-start: 1;
   }
 
   &__image--transform {
@@ -15,12 +34,18 @@
   }
 
   @media (min-width: 48em) {
+    &__text-content {
+      text-align: left;
+      align-items: start;
+    }
+
     &__image {
       min-height: 40rem;
     }
 
     &__image--transform {
       background-image: url("/images/desktop/image-transform.jpg");
+      grid-column-start: 2;
     }
 
     &__image--stand-out {
@@ -28,3 +53,37 @@
     }
   }
 }
+
+.design {
+  &__card {
+    min-height: 20rem;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  &__card--graphic {
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+  }
+
+  &__card--photography {
+    background-image: url('/images/mobile/image-photography.jpg');
+  }
+
+  @media (min-width: 48rem) {
+    &__card {
+      min-height: 40rem;
+    }
+
+    &__card--graphic {
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+    }
+
+    &__card--photography {
+      background-image: url("/images/desktop/image-photography.jpg")
+    }
+  }
+
+
+}
+
