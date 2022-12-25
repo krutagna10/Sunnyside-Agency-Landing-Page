@@ -1,3 +1,4 @@
+// Intro section
 .intro {
   &__text {
     font-size: var(--font-size-300);
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    padding: 3.5rem 0;
+    padding: 6rem 0;
     padding-inline: 1rem;
   }
 
@@ -37,6 +38,8 @@
     &__text-content {
       text-align: left;
       align-items: start;
+      justify-self: center;
+      align-self: center;
     }
 
     &__image {
@@ -52,8 +55,15 @@
       background-image: url("/images/desktop/image-stand-out.jpg");
     }
   }
+
+  @media (min-width: 80rem) {
+    &__text-content {
+      width: 60%;
+    }
+  }
 }
 
+// Design Section
 .design {
   &__card {
     min-height: 20rem;
@@ -83,7 +93,27 @@
       background-image: url("/images/desktop/image-photography.jpg")
     }
   }
-
-
 }
+
+// Testimonials Section
+.testimonial-section {
+  padding: 4rem 0;
+}
+
+.testimonial {
+  text-align: center;
+
+  &__image {
+    border-radius: 50%;
+  }
+}
+
+// Gallery Section
+.gallery {
+  &__image {
+    min-height: 15rem;
+  }
+}
+
+
 

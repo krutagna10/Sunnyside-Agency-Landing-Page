@@ -1,3 +1,9 @@
+// Spacing
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+// Headings
 .primary-heading,
 .secondary-heading,
 .tertiary-heading{
@@ -7,9 +13,6 @@
 
 .primary-heading {
   font-size: var(--font-size-600);
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  text-align: center;
   color: var(--white);
 }
 
@@ -22,3 +25,5 @@
   font-size: var(--font-size-400);
   color: var(--very-dark-desaturated-blue);
 }
+
+
