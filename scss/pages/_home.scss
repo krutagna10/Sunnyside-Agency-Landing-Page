@@ -7,7 +7,7 @@
   &__text-content {
     --gap: 1.5rem;
     font-weight: var(--font-weight-600);
-    color: var(--very-dark-desaturated-blue);
+    color: var(--very-dark-grayish-blue);
     text-align: center;
     padding: 6rem 0;
     padding-inline: 1rem;
@@ -104,34 +104,92 @@
 
 // Testimonials Section
 .testimonial-section {
-  padding: 3rem 0;
+  padding: 4rem 0;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .testimonial-section {
+    padding: 10rem 0;
+  }
 }
 
 .testimonials__heading {
   font-family: var(--font-fraunces);
-  color: var(--dark-grayish-blue);
-  font-size: var(--font-size-200);
+  color: var(--very-dark-grayish-blue);
+  font-size: var(--font-size-300);
+  font-weight: var(--font-weight-900);
   letter-spacing: 4px;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 
 }
 
 .testimonial {
-
   &__image {
     border-radius: 50%;
   }
 
-  &__text {
+  &__client-name {
+    color: var(--very-dark-desaturated-blue);
+  }
 
+  &__post {
+    color: var(--dark-grayish-blue);
   }
 }
 
 // Gallery Section
 .gallery {
   &__image {
-    min-height: 15rem;
+    min-height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+
+  &__image:hover {
+    background-size: 110%;
+  }
+
+  &__image--bottle {
+    background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+  }
+
+  &__image--orange {
+    background-image: url('/images/mobile/image-gallery-orange.jpg');
+  }
+
+  &__image--cone {
+    background-image: url('/images/mobile/image-gallery-cone.jpg');
+  }
+
+  &__image--cubes {
+    background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+  }
+
+  @media (min-width: 48rem) {
+    &__image {
+      min-height: 35rem;
+    }
+
+    &__image--bottle {
+      background-image: url('/images/desktop/image-gallery-milkbottles.jpg');
+    }
+
+    &__image--orange {
+      background-image: url('/images/desktop/image-gallery-orange.jpg');
+    }
+
+    &__image--cone {
+      background-image: url('/images/desktop/image-gallery-cone.jpg');
+    }
+
+    &__image--cubes {
+      background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
+    }
   }
 }
 

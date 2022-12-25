@@ -18,7 +18,7 @@
   --font-fraunces: 'Fraunces', serif;
 
   // Font Size
-  --font-size-700: 2.5rem;
+  --font-size-700: 2.25rem;
   --font-size-600: 2rem;
   --font-size-500: 1.75rem;
   --font-size-400: 1.25rem;
@@ -34,6 +34,12 @@
 //  Spacing
   --flow-space: 1rem;
   --gap: 1rem;
+}
+
+@media (min-width: 32rem) {
+  :root {
+    --font-size-700: 2.5rem;
+  }
 }
 
 @media (min-width: 48rem) {
