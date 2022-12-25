@@ -5,12 +5,10 @@
   }
 
   &__text-content {
+    --gap: 1.5rem;
+    font-weight: var(--font-weight-600);
+    color: var(--very-dark-desaturated-blue);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
     padding: 6rem 0;
     padding-inline: 1rem;
   }
@@ -66,10 +64,19 @@
 // Design Section
 .design {
   &__card {
-    min-height: 20rem;
+    min-height: 35rem;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-content: end;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  &__text {
+    font-size: var(--font-size-200);
+    color: var(--dark-desaturated-cyan);
   }
 
   &__card--graphic {
@@ -97,14 +104,27 @@
 
 // Testimonials Section
 .testimonial-section {
-  padding: 4rem 0;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.testimonials__heading {
+  font-family: var(--font-fraunces);
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size-200);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
 }
 
 .testimonial {
-  text-align: center;
 
   &__image {
     border-radius: 50%;
+  }
+
+  &__text {
+
   }
 }
 
