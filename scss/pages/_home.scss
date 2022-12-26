@@ -9,8 +9,7 @@
     font-weight: var(--font-weight-600);
     color: var(--very-dark-grayish-blue);
     text-align: center;
-    padding: 6rem 0;
-    padding-inline: 1rem;
+    padding: 6rem 1rem;
   }
 
   &__image {
@@ -71,7 +70,7 @@
     justify-content: center;
     align-content: end;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 
   &__text {
@@ -100,6 +99,12 @@
       background-image: url("/images/desktop/image-photography.jpg")
     }
   }
+
+  @media (min-width: 80rem) {
+    &__card {
+      padding-inline: 8rem;
+    }
+  }
 }
 
 // Testimonials Section
@@ -110,7 +115,7 @@
 
 @media (min-width: 48rem) {
   .testimonial-section {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -126,16 +131,26 @@
 }
 
 .testimonial {
+  padding-inline: 1rem;
+
   &__image {
     border-radius: 50%;
   }
 
+  &__text {
+    font-size: var(--font-size-300);
+  }
+
   &__client-name {
+    font-family: var(--font-fraunces);
+    font-weight: var(--font-weight-900);
+    font-size: var(--font-size-300);
     color: var(--very-dark-desaturated-blue);
   }
 
-  &__post {
-    color: var(--dark-grayish-blue);
+  &__client-post {
+    color: var(--grayish-blue);
+    font-size: var(--font-size-100);
   }
 }
 
@@ -145,13 +160,7 @@
     min-height: 20rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    transition: all 0.4s ease;
-    cursor: pointer;
-  }
-
-  &__image:hover {
-    background-size: 110%;
+    background-size: cover;
   }
 
   &__image--bottle {
@@ -191,6 +200,11 @@
       background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
     }
   }
+}
+
+// Footer section
+.footer {
+  background-color: var(--cyan);
 }
 
 

@@ -4,6 +4,7 @@
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --cyan: #90D4C6;
   --light-blue: #2695b9;
   --light-cyan: #8ed0c4;
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -355,8 +356,7 @@ body {
   font-weight: var(--font-weight-600);
   color: var(--very-dark-grayish-blue);
   text-align: center;
-  padding: 6rem 0;
-  padding-inline: 1rem;
+  padding: 6rem 1rem;
 }
 .intro__image {
   min-height: 20rem;
@@ -405,7 +405,7 @@ body {
   justify-content: center;
   align-content: end;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 .design__text {
   font-size: var(--font-size-200);
@@ -428,6 +428,11 @@ body {
     background-image: url("/images/desktop/image-photography.jpg");
   }
 }
+@media (min-width: 80rem) {
+  .design__card {
+    padding-inline: 8rem;
+  }
+}
 
 .testimonial-section {
   padding: 4rem 0;
@@ -436,7 +441,7 @@ body {
 
 @media (min-width: 48rem) {
   .testimonial-section {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 }
 .testimonials__heading {
@@ -449,26 +454,31 @@ body {
   margin-bottom: 2rem;
 }
 
+.testimonial {
+  padding-inline: 1rem;
+}
 .testimonial__image {
   border-radius: 50%;
 }
+.testimonial__text {
+  font-size: var(--font-size-300);
+}
 .testimonial__client-name {
+  font-family: var(--font-fraunces);
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size-300);
   color: var(--very-dark-desaturated-blue);
 }
-.testimonial__post {
-  color: var(--dark-grayish-blue);
+.testimonial__client-post {
+  color: var(--grayish-blue);
+  font-size: var(--font-size-100);
 }
 
 .gallery__image {
   min-height: 20rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-.gallery__image:hover {
-  background-size: 110%;
+  background-size: cover;
 }
 .gallery__image--bottle {
   background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
@@ -498,6 +508,10 @@ body {
   .gallery__image--cubes {
     background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
   }
+}
+
+.footer {
+  background-color: var(--cyan);
 }
 
 /*# sourceMappingURL=main.css.map */
