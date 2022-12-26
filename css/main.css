@@ -515,6 +515,12 @@ body {
   padding: 4rem 0;
 }
 
+.footer {
+  --gap: 1.75rem;
+}
+.footer__logo-link, .footer__nav, .footer__social-logos {
+  justify-self: center;
+}
 .footer__logo {
   filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(1123%) hue-rotate(116deg) brightness(100%) contrast(90%);
   transition: all 0.3s ease;
@@ -523,6 +529,7 @@ body {
   filter: none;
 }
 .footer__nav-list {
+  --gap: 2.5rem;
   list-style: none;
 }
 .footer__nav-link {

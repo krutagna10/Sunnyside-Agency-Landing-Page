@@ -209,6 +209,14 @@
 }
 
 .footer {
+  --gap: 1.75rem;
+
+  &__logo-link,
+  &__nav,
+  &__social-logos {
+    justify-self: center;
+  }
+
   &__logo {
     filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(1123%) hue-rotate(116deg) brightness(100%) contrast(90%);
     transition: all 0.3s ease;
@@ -219,6 +227,7 @@
   }
 
   &__nav-list {
+    --gap: 2.5rem;
     list-style: none;
   }
 
