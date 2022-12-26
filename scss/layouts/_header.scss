@@ -17,28 +17,29 @@
 .header {
   display: flex;
   padding-inline: 1rem;
+  width: 100%;
 
   &__nav {
     position: absolute;
     background-color: var(--white);
-    height: 40vh;
+    height: 50vh;
     top: 15%;
-    left: 0;
+    left: 50%;
+    width: 85%;
+    z-index: 999;
+    transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+    // Hiding navigation
     opacity: 0;
     transform: translateX(100%);
     pointer-events: none;
     visibility: hidden;
-    transition: all 0.3s ease;
   }
 
   .nav-open &__nav {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(-50%);
     visibility: visible;
     pointer-events: auto;
   }
@@ -85,6 +86,7 @@
     cursor: pointer;
     border: none;
     background: transparent url('/images/icon-hamburger.svg') no-repeat center;
+    z-index: 99;
   }
 
   .nav-open &__mobile-nav-toggle {
@@ -113,7 +115,10 @@
     &__nav {
       position: static;
       background: transparent;
+      justify-content: end !important;
       height: 100%;
+
+      // Showing navigation
       opacity: 1;
       transform: translateX(0);
       visibility: visible;
@@ -170,5 +175,22 @@
     &__heading {
       margin-top: 5rem;
     }
+
+    &__arrow-btn {
+      bottom: 40%;
+    }
   }
+}
+
+// Overlay
+.overlay.hidden {
+  display: none;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }

@@ -4,13 +4,7 @@
 }
 
 .footer {
-  --gap: 1.75rem;
-
-  &__logo-link,
-  &__nav,
-  &__social-logos {
-    justify-self: center;
-  }
+  --gap: 2.5rem;
 
   &__logo {
     filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(1123%) hue-rotate(116deg) brightness(100%) contrast(90%);
@@ -22,8 +16,14 @@
   }
 
   &__nav-list {
-    --gap: 2.5rem;
+    --gap: 2.25rem;
     list-style: none;
+  }
+
+  @media (min-width: 48em) {
+    &__nav-list {
+      --gap: 3rem;
+    }
   }
 
   &__nav-link {
@@ -35,6 +35,10 @@
 
   &__nav-link:hover {
     color: var(--white);
+  }
+
+  &__social-logos {
+    margin-top: 2.25rem;
   }
 
   &__social-link {

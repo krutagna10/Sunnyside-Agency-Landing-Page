@@ -37,13 +37,13 @@
   --gap: 1rem;
 }
 
-@media (min-width: 32rem) {
+@media (min-width: 32em) {
   :root {
     --font-size-700: 2.5rem;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   :root {
     --font-size-700: 3.75rem;
     --font-size-600: 2.5rem;
