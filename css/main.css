@@ -226,7 +226,7 @@ body {
   height: 50vh;
   top: 15%;
   left: 50%;
-  width: 85%;
+  width: 70%;
   z-index: 999;
   transition: all 0.3s ease;
   opacity: 0;
