@@ -73,6 +73,7 @@ body {
   color: var(--very-dark-desaturated-blue);
   line-height: 1.5;
   position: relative;
+  overflow-x: hidden;
 }
 
 .flow > * + * {
