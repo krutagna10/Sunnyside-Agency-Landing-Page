@@ -224,9 +224,9 @@ body {
   position: absolute;
   background-color: var(--white);
   height: 50vh;
-  top: 15%;
+  top: 20%;
   left: 50%;
-  width: 70%;
+  width: 80%;
   z-index: 999;
   transition: all 0.3s ease;
   opacity: 0;
@@ -234,11 +234,24 @@ body {
   pointer-events: none;
   visibility: hidden;
 }
+@media (min-width: 32em) {
+  .header__nav {
+    width: 65%;
+  }
+}
 .nav-open .header__nav {
   opacity: 1;
   transform: translateX(-50%);
   visibility: visible;
   pointer-events: auto;
+}
+.nav-open .header__nav::before {
+  position: absolute;
+  content: "";
+  top: -2.5rem;
+  right: 0;
+  border-top: 2.5rem solid transparent;
+  border-right: 2.5rem solid var(--white);
 }
 .header__nav-list {
   --gap: 1.5rem;
