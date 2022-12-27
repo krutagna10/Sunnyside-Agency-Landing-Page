@@ -220,6 +220,7 @@ body {
   padding-inline: 1rem;
 }
 .header__nav {
+  position: absolute;
   background-color: var(--white);
   height: 50vh;
   top: 20%;

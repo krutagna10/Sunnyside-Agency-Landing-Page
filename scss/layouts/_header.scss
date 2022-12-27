@@ -19,6 +19,7 @@
   padding-inline: 1rem;
 
   &__nav {
+    position: absolute;
     background-color: var(--white);
     height: 50vh;
     top: 20%;
