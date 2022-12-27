@@ -218,10 +218,8 @@ body {
 .header {
   display: flex;
   padding-inline: 1rem;
-  width: 100%;
 }
 .header__nav {
-  position: absolute;
   background-color: var(--white);
   height: 50vh;
   top: 20%;

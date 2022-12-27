@@ -17,10 +17,8 @@
 .header {
   display: flex;
   padding-inline: 1rem;
-  width: 100%;
 
   &__nav {
-    position: absolute;
     background-color: var(--white);
     height: 50vh;
     top: 20%;
