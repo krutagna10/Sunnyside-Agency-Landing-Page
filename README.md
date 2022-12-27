@@ -1,4 +1,4 @@
-# Sunnyside Agency Landing Page
+# Frontend Mentor - Sunnyside Agency Landing Page
 
 ### Screenshot
 
@@ -13,6 +13,11 @@
 - HTML
 - CSS
 - Vanilla Javascript
+
+## Author
+- Frontend Mentor - [@krutagna10](https://www.frontendmentor.io/profile/krutagna10)
+
+
 
 
 
