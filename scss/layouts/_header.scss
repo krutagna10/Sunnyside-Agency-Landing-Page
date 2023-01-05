@@ -117,7 +117,7 @@
   &__arrow-btn {
     position: absolute;
     left: 50%;
-    bottom: 35%;
+    bottom: 40%;
     transform: translateX(-50%);
     animation: arrow-animation infinite 1.5s linear;
   }
@@ -144,8 +144,9 @@
     &__nav {
       position: static;
       background: transparent;
-      justify-content: end !important;
+      width: auto;
       height: 100%;
+
 
       // Showing navigation
       opacity: 1;
@@ -174,7 +175,7 @@
     }
 
     &__nav-link:hover::before {
-      animation: border_animation 0.4s linear forwards;
+      animation: border_animation 0.35s linear forwards;
     }
 
     @keyframes border_animation {
@@ -203,10 +204,6 @@
 
     &__heading {
       margin-top: 5rem;
-    }
-
-    &__arrow-btn {
-      bottom: 40%;
     }
   }
 }

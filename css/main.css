@@ -303,7 +303,7 @@ body {
 .header__arrow-btn {
   position: absolute;
   left: 50%;
-  bottom: 35%;
+  bottom: 40%;
   transform: translateX(-50%);
   animation: arrow-animation infinite 1.5s linear;
 }
@@ -325,7 +325,7 @@ body {
   .header__nav {
     position: static;
     background: transparent;
-    justify-content: end !important;
+    width: auto;
     height: 100%;
     opacity: 1;
     transform: translateX(0);
@@ -349,7 +349,7 @@ body {
     width: 0;
   }
   .header__nav-link:hover::before {
-    animation: border_animation 0.4s linear forwards;
+    animation: border_animation 0.35s linear forwards;
   }
   @keyframes border_animation {
     0% {
@@ -373,9 +373,6 @@ body {
   }
   .header__heading {
     margin-top: 5rem;
-  }
-  .header__arrow-btn {
-    bottom: 40%;
   }
 }
 
