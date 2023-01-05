@@ -211,7 +211,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .header-section {
     padding: 2.25rem 0;
   }
@@ -479,7 +479,7 @@ body {
     background-image: url("/images/desktop/image-stand-out.jpg");
   }
 }
-@media (min-width: 80rem) {
+@media (min-width: 80em) {
   .intro__text-content {
     width: 60%;
   }
@@ -516,7 +516,7 @@ body {
     background-image: url("/images/desktop/image-photography.jpg");
   }
 }
-@media (min-width: 80rem) {
+@media (min-width: 80em) {
   .design__card {
     padding-inline: 8rem;
   }
