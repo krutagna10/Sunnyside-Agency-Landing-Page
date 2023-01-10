@@ -20,15 +20,17 @@
             <img class="header__logo" src="images/logo.svg" alt="Sunnyside Agency Logo">
         </a>
 
-        <nav class="header__nav flex flex--center">
-            <ul class="header__nav-list flex flex--align-center flex--gap">
+        <nav class="header__nav flex flex--center" aria-label="primary navigation">
+            <ul id="header__nav-list" class="header__nav-list flex flex--align-center flex--gap" data-visible="false">
                 <li><a href="#" class="header__nav-link">About</a></li>
                 <li><a href="#" class="header__nav-link">Services</a></li>
                 <li><a href="#" class="header__nav-link">Projects</a></li>
                 <li><a href="#" class="header__contact-link">Contact</a></li>
             </ul>
         </nav>
-        <button class="header__mobile-nav-toggle"></button>
+        <button class="header__mobile-nav-toggle" aria-controls="header__nav-list">
+            <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
 
     </div>
     <h1 class="header__heading primary-heading">We are creatives</h1>
