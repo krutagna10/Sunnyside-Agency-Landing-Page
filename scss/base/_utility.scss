@@ -3,19 +3,6 @@
   margin-top: var(--flow-space);
 }
 
-// Screen Reader only
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
-  border: 0;
-}
-
 // Headings
 .primary-heading,
 .secondary-heading,
@@ -38,5 +25,36 @@
   font-size: var(--font-size-500);
   color: var(--dark-desaturated-cyan);
 }
+
+
+// Screen Reader only
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+// Skip to content
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background: transparent;
+  color: var(--white);
+  padding: .5em 1em;
+  margin-inline: auto;
+  transform: translateY(-200%);
+  transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(120%);
+}
+
 
 

@@ -106,6 +106,11 @@
     background-image: url('/images/icon-close.svg');
   }
 
+  &__mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
+  }
+
   &__heading {
     margin-top: 3.5rem;
     text-transform: uppercase;
