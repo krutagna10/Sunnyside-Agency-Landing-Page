@@ -4,6 +4,14 @@ const navList = document.querySelector('.header__nav-list');
 const navToggle = document.querySelector('.header__mobile-nav-toggle');
 const overlay = document.querySelector('.overlay');
 
+// Function for hiding mobile navigation
+const hideMobileNavigation = () => {
+    navList.setAttribute('data-visible', 'false');
+    navToggle.setAttribute('aria-expanded', 'false');
+    overlay.classList.add('hidden');
+};
+
+// When the user clicks on nav toggle
 navToggle.addEventListener('click', () => {
     const visibility = navList.getAttribute('data-visible');
     if (visibility === 'false') {
@@ -16,13 +24,6 @@ navToggle.addEventListener('click', () => {
         overlay.classList.add('hidden');
     }
 })
-
-// Function for hiding mobile navigation
-const hideMobileNavigation = () => {
-    navList.setAttribute('data-visible', 'false');
-    navToggle.setAttribute('aria-expanded', 'false');
-    overlay.classList.add('hidden');
-};
 
 
 // When the user clicks on escape key
