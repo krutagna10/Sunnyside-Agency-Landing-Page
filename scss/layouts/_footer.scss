@@ -15,7 +15,8 @@
     filter: none;
   }
 
-  &__nav-list {
+  &__nav-list,
+  &__social-list {
     --gap: 2.25rem;
     list-style: none;
   }

@@ -442,7 +442,7 @@ body {
 .footer__logo:hover {
   filter: none;
 }
-.footer__nav-list {
+.footer__nav-list, .footer__social-list {
   --gap: 2.25rem;
   list-style: none;
 }

@@ -6,7 +6,7 @@
 // Headings
 .primary-heading,
 .secondary-heading,
-.tertiary-heading{
+.tertiary-heading {
   font-family: var(--font-fraunces) !important;
   font-weight: var(--font-weight-900);
 }
@@ -25,7 +25,6 @@
   font-size: var(--font-size-500);
   color: var(--dark-desaturated-cyan);
 }
-
 
 // Screen Reader only
 .sr-only {
@@ -46,7 +45,7 @@
   z-index: 9999;
   background: transparent;
   color: var(--white);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin-inline: auto;
   transform: translateY(-200%);
   transition: transform 250ms ease-in;
@@ -55,6 +54,3 @@
 .skip-to-content:focus {
   transform: translateY(120%);
 }
-
-
-
