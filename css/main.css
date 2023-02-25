@@ -485,20 +485,16 @@ body {
   text-align: center;
   padding: 6rem 1rem;
 }
-.intro__image {
+.intro__picture {
   min-height: 20rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.intro__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .intro__image--transform {
   grid-row-start: 1;
-}
-.intro__image--transform {
-  background-image: url("/images/mobile/image-transform.jpg");
-}
-.intro__image--stand-out {
-  background-image: url("/images/mobile/image-stand-out.jpg");
 }
 @media (min-width: 48em) {
   .intro__text-content {
@@ -507,15 +503,8 @@ body {
     justify-self: center;
     align-self: center;
   }
-  .intro__image {
+  .intro__picture {
     min-height: 40rem;
-  }
-  .intro__image--transform {
-    background-image: url("/images/desktop/image-transform.jpg");
-    grid-column-start: 2;
-  }
-  .intro__image--stand-out {
-    background-image: url("/images/desktop/image-stand-out.jpg");
   }
 }
 @media (min-width: 80em) {
