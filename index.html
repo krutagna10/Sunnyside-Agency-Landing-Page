@@ -62,9 +62,9 @@
         </button>
       </div>
       <h1 class="header__heading primary-heading">We are creatives</h1>
-      <a class="header__arrow-btn" href="#intro-section"
-        ><img src="images/icon-arrow-down.svg" alt="down-arrow-icon"
-      /></a>
+      <a class="header__arrow-btn" href="#intro-section">
+        <img src="images/icon-arrow-down.svg" alt="down-arrow-icon" />
+      </a>
     </header>
 
     <main id="main">
@@ -155,7 +155,7 @@
                 <img
                   class="testimonial__image"
                   src="images/image-emily.jpg"
-                  alt="Emily image"
+                  alt="Emily"
                 />
               </figure>
               <blockquote class="testimonial__text">
@@ -175,7 +175,7 @@
                 <img
                   class="testimonial__image"
                   src="images/image-thomas.jpg"
-                  alt="Thomas Image"
+                  alt="Thomas"
                 />
               </figure>
               <blockquote class="testimonial__text">
@@ -195,7 +195,7 @@
                 <img
                   class="testimonial__image"
                   src="images/image-jennie.jpg"
-                  alt="Jennie Image"
+                  alt="Jennie"
                 />
               </figure>
               <blockquote class="testimonial__text">
@@ -213,10 +213,50 @@
 
       <section class="gallery-section">
         <div class="gallery container grid grid--4-columns">
-          <div class="gallery__image gallery__image--bottle"></div>
-          <div class="gallery__image gallery__image--orange"></div>
-          <div class="gallery__image gallery__image--cone"></div>
-          <div class="gallery__image gallery__image--cubes"></div>
+          <picture class="gallery__picture">
+            <source
+              media="(min_width: 48em)"
+              srcset="/images/desktop/image-gallery-milkbottles.jpg"
+            />
+            <img
+              class="gallery__image"
+              src="/images/mobile/image-gallery-milkbottles.jpg"
+              alt="Milk bottle"
+            />
+          </picture>
+          <picture class="gallery__picture">
+            <source
+              media="(min_width: 48em)"
+              srcset="/images/desktop/image-gallery-orange.jpg"
+            />
+            <img
+              class="gallery__image"
+              src="/images/mobile/image-gallery-orange.jpg"
+              alt="Orange"
+            />
+          </picture>
+          <picture class="gallery__picture">
+            <source
+              media="(min_width: 48em)"
+              srcset="/images/desktop/image-gallery-cone.jpg"
+            />
+            <img
+              class="gallery__image"
+              src="/images/mobile/image-gallery-cone.jpg"
+              alt="Cone"
+            />
+          </picture>
+          <picture class="gallery__picture">
+            <source
+              media="(min_width: 48em)"
+              srcset="/images/desktop/image-gallery-sugarcubes.jpg"
+            />
+            <img
+              class="gallery__image"
+              src="/images/mobile/image-gallery-sugar-cubes.jpg"
+              alt="Sugar Cubes"
+            />
+          </picture>
         </div>
       </section>
     </main>
