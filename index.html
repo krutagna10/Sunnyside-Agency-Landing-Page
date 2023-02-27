@@ -27,10 +27,10 @@
     <title>Sunnyside Agency landing page</title>
   </head>
   <body>
-    <section class="header-section">
+    <header class="header">
       <a class="skip-to-content" href="#main">Skip to content</a>
       <header
-        class="header flex flex--justify-space-between flex--align-center"
+        class="header__container flex flex--justify-space-between flex--align-center"
       >
         <a href="#" class="header__link" aria-label="Sunnyside Agency - Home">
           <img
@@ -39,6 +39,14 @@
             alt="Sunnyside Agency"
           />
         </a>
+
+        <button
+          class="header__mobile-nav-toggle"
+          aria-controls="header__nav-list"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
 
         <nav class="header__nav flex flex--center" aria-label="Primary">
           <ul
@@ -52,14 +60,8 @@
             <li><a href="#" class="header__contact-link">Contact</a></li>
           </ul>
         </nav>
-        <button
-          class="header__mobile-nav-toggle"
-          aria-controls="header__nav-list"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Menu</span>
-        </button>
       </header>
+
       <h1 class="header__heading primary-heading">We are creatives</h1>
       <a class="header__arrow-btn" href="#intro-section">
         <img
@@ -67,7 +69,7 @@
           alt="Scroll down to next section"
         />
       </a>
-    </section>
+    </header>
 
     <main id="main">
       <section class="intro-section" id="intro-section">
@@ -83,7 +85,7 @@
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <button class="intro__btn-learn btn btn--yellow">Learn More</button>
+            <a href="#" class="intro__btn-learn btn btn--yellow">Learn More</a>
           </div>
           <picture class="intro__picture">
             <source
@@ -101,7 +103,7 @@
         <div class="intro grid grid--2-columns">
           <picture class="intro__picture">
             <source
-              media="(min-width: 48em"
+              media="(min-width: 48em)"
               srcset="/images/desktop/image-stand-out.jpg"
             />
             <img
@@ -121,7 +123,7 @@
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <button class="intro__btn-learn btn btn--red">Learn More</button>
+            <a href="#" class="intro__btn-learn btn btn--red">Learn More</a>
           </div>
         </div>
       </section>
@@ -223,7 +225,8 @@
             <img
               class="gallery__image"
               src="/images/mobile/image-gallery-milkbottles.jpg"
-              alt="Milk bottle"
+              alt=""
+              aria-hidden="true"
             />
           </picture>
           <picture class="gallery__picture">
@@ -234,7 +237,8 @@
             <img
               class="gallery__image"
               src="/images/mobile/image-gallery-orange.jpg"
-              alt="Orange"
+              alt=""
+              aria-hidden="true"
             />
           </picture>
           <picture class="gallery__picture">
@@ -245,7 +249,8 @@
             <img
               class="gallery__image"
               src="/images/mobile/image-gallery-cone.jpg"
-              alt="Cone"
+              alt=""
+              aria-hidden="true"
             />
           </picture>
           <picture class="gallery__picture">
@@ -256,7 +261,8 @@
             <img
               class="gallery__image"
               src="/images/mobile/image-gallery-sugar-cubes.jpg"
-              alt="Sugar Cubes"
+              alt=""
+              aria-hidden="true"
             />
           </picture>
         </div>
@@ -286,11 +292,7 @@
         <div class="footer__social-logos">
           <ul class="footer__social-list flex flex--gap">
             <li>
-              <a
-                href="#"
-                class="footer__social-link"
-                aria-label="Link to our facebook"
-              >
+              <a href="#" class="footer__social-link" aria-label="Facebook">
                 <ion-icon
                   class="footer__social-logo"
                   name="logo-facebook"
@@ -298,11 +300,7 @@
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                class="footer__social-link"
-                aria-label="Link to our instagram"
-              >
+              <a href="#" class="footer__social-link" aria-label="Instagram">
                 <ion-icon
                   class="footer__social-logo"
                   name="logo-instagram"
@@ -310,11 +308,7 @@
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                class="footer__social-link"
-                aria-label="Link to our Twitter"
-              >
+              <a href="#" class="footer__social-link" aria-label="Twitter">
                 <ion-icon
                   class="footer__social-logo"
                   name="logo-twitter"
@@ -322,11 +316,7 @@
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                class="footer__social-link"
-                aria-label="Link to our Pinterest"
-              >
+              <a href="#" class="footer__social-link" aria-label="Pinterest">
                 <ion-icon
                   class="footer__social-logo"
                   name="logo-pinterest"
